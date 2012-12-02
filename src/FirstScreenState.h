@@ -1,5 +1,5 @@
 /*
- *  GreenState.cpp
+ *  FirstScreenState.h
  *
  *  Copyright (c) 2011, Neil Mendoza, http://www.neilmendoza.com
  *  All rights reserved. 
@@ -29,29 +29,16 @@
  *  POSSIBILITY OF SUCH DAMAGE. 
  *
  */
-#include "GreenState.h"
+#pragma once
 
-void GreenState::update()
-{
-	if (ofGetElapsedTimeMillis() - getSharedData().lastUpdate > 200)
-	{
-		getSharedData().counter++;
-		getSharedData().lastUpdate = ofGetElapsedTimeMillis();
-	}
-}
+#include "ofxState.h"
+#include "SharedData.h"
 
-void GreenState::draw()
+class FirstScreenState : public Apex::ofxState<SharedData>
 {
-	ofBackground(0, 255, 0);
-	ofSetColor(255, 0, 0);
-}
-
-string GreenState::getName()
-{
-	return "green";
-}
-
-void GreenState::touchDown(ofTouchEventArgs & touch)
-{
-	changeState("red");
-}
+public:
+	void update();
+	void draw();
+	void touchDown(ofTouchEventArgs & touch);
+	string getName();
+};

@@ -1,6 +1,6 @@
 #include "CellularAutomataOfxApp.h"
 #include "RedState.h"
-#include "GreenState.h"
+#include "FirstScreenState.h"
 //#include "PlayAutomataAnimationState.cpp"
 //#include "FirstScreenState.h"
 
@@ -34,8 +34,8 @@ void CellularAutomataOfxApp::setup(){
     
     // initialise state machine
 	stateMachine.addState(new RedState());
-	stateMachine.addState(new GreenState());
-	stateMachine.changeState("green");
+	stateMachine.addState(new FirstScreenState());
+	stateMachine.changeState("firstScreenState");
 
     //stateMachine.addState(new PlayAutomataAnimationState);
     //stateMachine.addState(new  FirstScreenState);

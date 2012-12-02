@@ -48,7 +48,7 @@ void RedState::draw()
 
 void RedState::touchDown(ofTouchEventArgs & touch)
 {
-	changeState("green");
+	changeState("firstScreenState");
 }
 
 string RedState::getName()
