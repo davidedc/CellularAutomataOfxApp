@@ -1,8 +1,9 @@
 #pragma once
 
-//#include "ofMain.h"
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
+#include "ofxStateMachine.h"
+#include "SharedData.h"
 
 class CellularAutomataOfxApp : public ofxiPhoneApp{
     
@@ -38,6 +39,9 @@ public:
     CellularAutomataOfxApp(CGSize passed_screenSize);
     CGSize screenSize;
     ofTrueTypeFont testFont;
+
+private:
+    itg::ofxStateMachine<SharedData> stateMachine;
 
 
 };

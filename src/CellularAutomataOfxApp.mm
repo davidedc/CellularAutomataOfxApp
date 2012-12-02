@@ -1,4 +1,6 @@
 #include "CellularAutomataOfxApp.h"
+#include "RedState.h"
+#include "GreenState.h"
 //#include "PlayAutomataAnimationState.cpp"
 //#include "FirstScreenState.h"
 
@@ -30,6 +32,11 @@ void CellularAutomataOfxApp::setup(){
     // http://stackoverflow.com/questions/10247680/adding-resource-files-to-xcode
 	testFont.loadFont("MgOpenModernaRegular.ttf", 80, true, false, false);
     
+    // initialise state machine
+	stateMachine.addState(new RedState());
+	stateMachine.addState(new GreenState());
+	stateMachine.changeState("green");
+
     //stateMachine.addState(new PlayAutomataAnimationState);
     //stateMachine.addState(new  FirstScreenState);
 	//stateMachine.changeState("firstScreen");
