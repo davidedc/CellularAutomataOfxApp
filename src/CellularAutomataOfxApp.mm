@@ -1,5 +1,5 @@
 #include "CellularAutomataOfxApp.h"
-#include "RedState.h"
+#include "AnimateAutomatonState.h"
 #include "FirstScreenState.h"
 //#include "PlayAutomataAnimationState.cpp"
 //#include "FirstScreenState.h"
@@ -33,7 +33,7 @@ void CellularAutomataOfxApp::setup(){
 	testFont.loadFont("MgOpenModernaRegular.ttf", 80, true, false, false);
     
     // initialise state machine
-	stateMachine.addState(new RedState());
+	stateMachine.addState(new AnimateAutomatonState());
 	stateMachine.addState(new FirstScreenState());
 	stateMachine.changeState("firstScreenState");
 

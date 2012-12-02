@@ -1,5 +1,5 @@
 /*
- *  RedState.cpp
+ *  AnimateAutomatonState.h
  *
  *  Copyright (c) 2011, Neil Mendoza, http://www.neilmendoza.com
  *  All rights reserved. 
@@ -29,29 +29,16 @@
  *  POSSIBILITY OF SUCH DAMAGE. 
  *
  */
-#include "RedState.h"
+#pragma once
 
-void RedState::update()
-{
-	if (ofGetElapsedTimeMillis() - getSharedData().lastUpdate > 1000)
-	{
-		getSharedData().counter--;
-		getSharedData().lastUpdate = ofGetElapsedTimeMillis();
-	}
-}
+#include "ofxState.h"
+#include "SharedData.h"
 
-void RedState::draw()
+class AnimateAutomatonState : public Apex::ofxState<SharedData>
 {
-	ofBackground(255, 0, 0);
-	ofSetColor(0, 255, 0);
-}
-
-void RedState::touchDown(ofTouchEventArgs & touch)
-{
-	changeState("firstScreenState");
-}
-
-string RedState::getName()
-{
-	return "red";
-}
+public:
+	void update();
+	void draw();
+	void touchDown(ofTouchEventArgs & touch);
+	string getName();
+};

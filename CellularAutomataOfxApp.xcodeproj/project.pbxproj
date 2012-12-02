@@ -18,7 +18,7 @@
 		BBE5EAB80F49AD8400F28951 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */; };
 		C4C14F6E166C12170049AED6 /* MgOpenModernaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F6D166C12170049AED6 /* MgOpenModernaRegular.ttf */; };
 		C4C14F76166C138D0049AED6 /* FirstScreenState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C14F71166C138D0049AED6 /* FirstScreenState.cpp */; };
-		C4C14F77166C138D0049AED6 /* RedState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C14F73166C138D0049AED6 /* RedState.cpp */; };
+		C4C14F77166C138D0049AED6 /* AnimateAutomatonState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C14F73166C138D0049AED6 /* AnimateAutomatonState.cpp */; };
 		E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3ED613B38FB500A75A5D /* Project.xcconfig */; };
 		E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
@@ -65,8 +65,8 @@
 		C4C14F70166C138D0049AED6 /* ofxStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxStateMachine.h; sourceTree = "<group>"; };
 		C4C14F71166C138D0049AED6 /* FirstScreenState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstScreenState.cpp; sourceTree = "<group>"; };
 		C4C14F72166C138D0049AED6 /* FirstScreenState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstScreenState.h; sourceTree = "<group>"; };
-		C4C14F73166C138D0049AED6 /* RedState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedState.cpp; sourceTree = "<group>"; };
-		C4C14F74166C138D0049AED6 /* RedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedState.h; sourceTree = "<group>"; };
+		C4C14F73166C138D0049AED6 /* AnimateAutomatonState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimateAutomatonState.cpp; sourceTree = "<group>"; };
+		C4C14F74166C138D0049AED6 /* AnimateAutomatonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateAutomatonState.h; sourceTree = "<group>"; };
 		C4C14F75166C138D0049AED6 /* SharedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedData.h; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -197,8 +197,8 @@
 				C4C14F70166C138D0049AED6 /* ofxStateMachine.h */,
 				C4C14F71166C138D0049AED6 /* FirstScreenState.cpp */,
 				C4C14F72166C138D0049AED6 /* FirstScreenState.h */,
-				C4C14F73166C138D0049AED6 /* RedState.cpp */,
-				C4C14F74166C138D0049AED6 /* RedState.h */,
+				C4C14F73166C138D0049AED6 /* AnimateAutomatonState.cpp */,
+				C4C14F74166C138D0049AED6 /* AnimateAutomatonState.h */,
 				C4C14F75166C138D0049AED6 /* SharedData.h */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				E4D8936D11527B74007E1F53 /* CellularAutomataOfxApp.mm */,
@@ -307,7 +307,7 @@
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				E4D8936F11527B74007E1F53 /* CellularAutomataOfxApp.mm in Sources */,
 				C4C14F76166C138D0049AED6 /* FirstScreenState.cpp in Sources */,
-				C4C14F77166C138D0049AED6 /* RedState.cpp in Sources */,
+				C4C14F77166C138D0049AED6 /* AnimateAutomatonState.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

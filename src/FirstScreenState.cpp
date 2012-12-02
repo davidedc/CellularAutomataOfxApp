@@ -53,5 +53,5 @@ string FirstScreenState::getName()
 
 void FirstScreenState::touchDown(ofTouchEventArgs & touch)
 {
-	changeState("red");
+	changeState("animateAutomatonState");
 }
