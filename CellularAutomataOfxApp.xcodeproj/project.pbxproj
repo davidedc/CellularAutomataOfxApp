@@ -19,6 +19,11 @@
 		C4C14F6E166C12170049AED6 /* MgOpenModernaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F6D166C12170049AED6 /* MgOpenModernaRegular.ttf */; };
 		C4C14F76166C138D0049AED6 /* FirstScreenState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C14F71166C138D0049AED6 /* FirstScreenState.cpp */; };
 		C4C14F77166C138D0049AED6 /* AnimateAutomatonState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C14F73166C138D0049AED6 /* AnimateAutomatonState.cpp */; };
+		C4C14F79166C24E30049AED6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F78166C24E30049AED6 /* Default.png */; };
+		C4C14F7B166C24E70049AED6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F7A166C24E70049AED6 /* Default@2x.png */; };
+		C4C14F7D166C24E90049AED6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F7C166C24E90049AED6 /* Default-568h@2x.png */; };
+		C4C14F7F166C24F00049AED6 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F7E166C24F00049AED6 /* Default-Portrait~ipad.png */; };
+		C4C14F81166C24F40049AED6 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F80166C24F40049AED6 /* Default-Portrait@2x~ipad.png */; };
 		E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3ED613B38FB500A75A5D /* Project.xcconfig */; };
 		E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
@@ -68,6 +73,11 @@
 		C4C14F73166C138D0049AED6 /* AnimateAutomatonState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimateAutomatonState.cpp; sourceTree = "<group>"; };
 		C4C14F74166C138D0049AED6 /* AnimateAutomatonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateAutomatonState.h; sourceTree = "<group>"; };
 		C4C14F75166C138D0049AED6 /* SharedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedData.h; sourceTree = "<group>"; };
+		C4C14F78166C24E30049AED6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C4C14F7A166C24E70049AED6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C4C14F7C166C24E90049AED6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C4C14F7E166C24F00049AED6 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		C4C14F80166C24F40049AED6 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E41D400613B39D2100A75A5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +127,11 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C4C14F80166C24F40049AED6 /* Default-Portrait@2x~ipad.png */,
+				C4C14F7E166C24F00049AED6 /* Default-Portrait~ipad.png */,
+				C4C14F7C166C24E90049AED6 /* Default-568h@2x.png */,
+				C4C14F7A166C24E70049AED6 /* Default@2x.png */,
+				C4C14F78166C24E30049AED6 /* Default.png */,
 				C4C14F6D166C12170049AED6 /* MgOpenModernaRegular.ttf */,
 				E4D8936A11527B74007E1F53 /* src */,
 				BB24E1F710DAA51900E9C588 /* openFrameworks */,
@@ -278,6 +293,11 @@
 				BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */,
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
+				C4C14F79166C24E30049AED6 /* Default.png in Resources */,
+				C4C14F7B166C24E70049AED6 /* Default@2x.png in Resources */,
+				C4C14F7D166C24E90049AED6 /* Default-568h@2x.png in Resources */,
+				C4C14F7F166C24F00049AED6 /* Default-Portrait~ipad.png in Resources */,
+				C4C14F81166C24F40049AED6 /* Default-Portrait@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
