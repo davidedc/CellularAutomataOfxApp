@@ -41,4 +41,8 @@ public:
 	void draw();
 	void touchDown(ofTouchEventArgs & touch);
 	string getName();
+    void calculateBitmap();
+    
+    ofImage output;         // output image
+
 };

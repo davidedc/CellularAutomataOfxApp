@@ -1,7 +1,7 @@
 #include "ofMain.h"
 #include "CellularAutomataOfxApp.h"
 #include "ofxiPhoneExtras.h"
-
+#include "SharedData.h"
 
 
 int main(){
@@ -52,5 +52,7 @@ int main(){
 	ofSetupOpenGL(iOSWindow, screenSize.width, screenSize.height, OF_FULLSCREEN);
     //glEnable(GL_BLEND);
     //gllBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+
 	ofRunApp(new CellularAutomataOfxApp(screenSize));
 }

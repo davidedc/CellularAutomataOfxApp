@@ -5,7 +5,7 @@
 #include "ofxStateMachine.h"
 #include "SharedData.h"
 
-class CellularAutomataOfxApp : public ofxiPhoneApp{
+class CellularAutomataOfxApp : public ofxiPhoneApp, Apex::ofxState<SharedData>{
     
 public:
     void setup();
@@ -26,19 +26,9 @@ public:
     void deviceOrientationChanged(int newOrientation);
 
     bool retina;
-
-    int w;  // width
-    int h;  // height
-
-
-    unsigned char* pixels;  // pixel array
-
-    ofImage output;         // output image
-
-    void calculateBitmap();
-    CellularAutomataOfxApp(CGSize passed_screenSize);
-    CGSize screenSize;
-    ofTrueTypeFont testFont;
+    CellularAutomataOfxApp(CGSize theSize);
+	string getName();
+    CGSize theScreenSize;
 
 private:
     itg::ofxStateMachine<SharedData> stateMachine;
