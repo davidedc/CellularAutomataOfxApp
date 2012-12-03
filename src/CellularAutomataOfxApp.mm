@@ -6,8 +6,10 @@
 
 
 //--------------------------------------------------------------
-CellularAutomataOfxApp::CellularAutomataOfxApp(CGSize theSize){
+CellularAutomataOfxApp::CellularAutomataOfxApp(CGSize theSize, bool is_Ipad, bool is_Retina){
     theScreenSize = theSize;
+    isIpad = is_Ipad;
+    isRetina = is_Retina;
 }
 
 //--------------------------------------------------------------
@@ -35,6 +37,8 @@ void CellularAutomataOfxApp::setup(){
 	stateMachine.addState(new FirstScreenState());
 	stateMachine.changeState("firstScreenState");
     
+    stateMachine.getSharedData().isIpad = isIpad;
+    stateMachine.getSharedData().isRetina = isRetina;
     stateMachine.getSharedData().screenHeightPixels = (int)theScreenSize.height;
     stateMachine.getSharedData().screenWidthPixels = (int)theScreenSize.width;
     ofLog(OF_LOG_NOTICE, "screen height: " + ofToString(stateMachine.getSharedData().screenHeightPixels));

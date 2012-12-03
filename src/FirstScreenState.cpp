@@ -31,19 +31,26 @@
  */
 #include "FirstScreenState.h"
 
-void FirstScreenState::update()
-{
-	if (ofGetElapsedTimeMillis() - getSharedData().lastUpdate > 200)
-	{
-		getSharedData().counter++;
-		getSharedData().lastUpdate = ofGetElapsedTimeMillis();
-	}
+void FirstScreenState::setup() {
 }
 
-void FirstScreenState::draw()
-{
-	ofBackground(0, 255, 0);
-	ofSetColor(255, 0, 0);
+void FirstScreenState::update(){
+}
+
+void FirstScreenState::draw() {
+
+    if (!backGroundImage.isAllocated()){
+        if (getSharedData().isIpad) {
+            if (getSharedData().isRetina) {
+                backGroundImage.loadImage("Default-Portrait@2x~ipad.png");
+                ofLog(OF_LOG_NOTICE, "loaded image " + ofToString(backGroundImage.isAllocated()));
+            }
+        }
+    }
+
+    ofBackground(0, 255, 0);
+	//ofSetColor(255, 0, 0);
+    backGroundImage.draw(0,0);
 }
 
 string FirstScreenState::getName()

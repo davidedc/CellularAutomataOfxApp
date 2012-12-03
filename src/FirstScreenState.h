@@ -37,8 +37,11 @@
 class FirstScreenState : public Apex::ofxState<SharedData>
 {
 public:
+	void setup();
 	void update();
 	void draw();
 	void touchDown(ofTouchEventArgs & touch);
 	string getName();
+    ofImage backGroundImage;
+
 };

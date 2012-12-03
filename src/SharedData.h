@@ -42,5 +42,7 @@ public:
     int screenHeightPixels;
     ofTrueTypeFont testFont;
     unsigned char *pixels;  // pixel array
+    bool isIpad;
+    bool isRetina;
 
 };

@@ -25,8 +25,9 @@ public:
     void gotMemoryWarning();
     void deviceOrientationChanged(int newOrientation);
 
-    bool retina;
-    CellularAutomataOfxApp(CGSize theSize);
+    bool isRetina;
+    bool isIpad;
+    CellularAutomataOfxApp(CGSize theSize, bool isIpad, bool isRetina);
 	string getName();
     CGSize theScreenSize;
 

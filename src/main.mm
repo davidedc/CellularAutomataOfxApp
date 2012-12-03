@@ -30,8 +30,13 @@ int main(){
     // For the time being we are not making much use of device detection
     // But this would be the way to do it...
     
+    bool isIpad = false;
+    bool isRetina = false;
+    
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        isIpad = true;
         if (screenScale > 1.0) {
+            isRetina = true;
             // isPad Retina
             iOSWindow->enableRetinaSupport();
         }
@@ -41,6 +46,7 @@ int main(){
     }
     else {
         if (screenScale > 1.0) {
+            isRetina = true;
             // iPhone Retina
             iOSWindow->enableRetinaSupport();
         }
@@ -55,5 +61,5 @@ int main(){
     //gllBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 
-	ofRunApp(new CellularAutomataOfxApp(screenSize));
+	ofRunApp(new CellularAutomataOfxApp(screenSize, isIpad,isRetina));
 }
