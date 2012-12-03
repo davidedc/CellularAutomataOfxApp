@@ -37,7 +37,7 @@ void CellularAutomataOfxApp::setup(){
     
     stateMachine.getSharedData().screenHeightPixels = (int)theScreenSize.height;
     stateMachine.getSharedData().screenWidthPixels = (int)theScreenSize.width;
-    ofLog(OF_LOG_NOTICE, "screen height: " + ofToString(getSharedData().screenHeightPixels));
+    ofLog(OF_LOG_NOTICE, "screen height: " + ofToString(stateMachine.getSharedData().screenHeightPixels));
     stateMachine.getSharedData().pixels = new unsigned char[(int)(theScreenSize.height*theScreenSize.width*3)];  // pixel array
 
 

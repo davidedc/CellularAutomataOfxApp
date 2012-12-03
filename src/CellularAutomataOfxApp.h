@@ -5,7 +5,7 @@
 #include "ofxStateMachine.h"
 #include "SharedData.h"
 
-class CellularAutomataOfxApp : public ofxiPhoneApp, Apex::ofxState<SharedData>{
+class CellularAutomataOfxApp : public ofxiPhoneApp {
     
 public:
     void setup();

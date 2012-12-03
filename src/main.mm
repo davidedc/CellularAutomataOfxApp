@@ -49,6 +49,7 @@ int main(){
         }
     }
 	
+
 	ofSetupOpenGL(iOSWindow, screenSize.width, screenSize.height, OF_FULLSCREEN);
     //glEnable(GL_BLEND);
     //gllBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
