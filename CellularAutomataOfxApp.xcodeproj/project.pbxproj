@@ -16,6 +16,7 @@
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
 		BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */; };
 		BBE5EAB80F49AD8400F28951 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */; };
+		C43BAB8C16764FB4001D0A41 /* ofxEasingFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C43BAB8A16764FB4001D0A41 /* ofxEasingFunc.cpp */; };
 		C4C14F6E166C12170049AED6 /* MgOpenModernaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F6D166C12170049AED6 /* MgOpenModernaRegular.ttf */; };
 		C4C14F76166C138D0049AED6 /* FirstScreenState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C14F71166C138D0049AED6 /* FirstScreenState.cpp */; };
 		C4C14F77166C138D0049AED6 /* AnimateAutomatonState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C14F73166C138D0049AED6 /* AnimateAutomatonState.cpp */; };
@@ -69,6 +70,8 @@
 		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ofxiphone-Info.plist"; sourceTree = "<group>"; };
 		BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C43BAB8A16764FB4001D0A41 /* ofxEasingFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasingFunc.cpp; sourceTree = "<group>"; };
+		C43BAB8B16764FB4001D0A41 /* ofxEasingFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasingFunc.h; sourceTree = "<group>"; };
 		C4C14F6D166C12170049AED6 /* MgOpenModernaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MgOpenModernaRegular.ttf; sourceTree = "<group>"; };
 		C4C14F6F166C138D0049AED6 /* ofxState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxState.h; sourceTree = "<group>"; };
 		C4C14F70166C138D0049AED6 /* ofxStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxStateMachine.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C43BAB8A16764FB4001D0A41 /* ofxEasingFunc.cpp */,
+				C43BAB8B16764FB4001D0A41 /* ofxEasingFunc.h */,
 				C4C14F6F166C138D0049AED6 /* ofxState.h */,
 				C4C14F70166C138D0049AED6 /* ofxStateMachine.h */,
 				C4C14F71166C138D0049AED6 /* FirstScreenState.cpp */,
@@ -344,6 +349,7 @@
 				E4D8936F11527B74007E1F53 /* CellularAutomataOfxApp.mm in Sources */,
 				C4C14F76166C138D0049AED6 /* FirstScreenState.cpp in Sources */,
 				C4C14F77166C138D0049AED6 /* AnimateAutomatonState.cpp in Sources */,
+				C43BAB8C16764FB4001D0A41 /* ofxEasingFunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
