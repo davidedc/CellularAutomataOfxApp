@@ -45,4 +45,7 @@ public:
     bool isIpad;
     bool isRetina;
 
+    string appTitleString = "Digital Forest";
+    int marginSize, ascender, upperVerticalMarginSize, totalVerticalMarginSize;
+    ofRectangle appTitleStringBoundingBox;
 };
