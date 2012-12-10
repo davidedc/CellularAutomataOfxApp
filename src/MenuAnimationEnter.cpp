@@ -20,8 +20,6 @@ void MenuAnimationEnter::draw() {
 	// all functions take input 0. ~ 1., and outputs 0. ~ 1.
 	float horizSlide = 60 * ofxEasingFunc::Cubic::easeInOut(t);
 	
-    cout << horizSlide;
-    
     if (!backGroundImage.isAllocated()){
         if (getSharedData().isIpad) {
             if (getSharedData().isRetina) {
