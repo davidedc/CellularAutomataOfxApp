@@ -45,7 +45,10 @@ void MenuAnimationEnter::draw() {
     //ofRect(15, 270 - ascender, appTitleStringBoundingBox.width, appTitleStringBoundingBox.height);
     
     ofSetColor(0,0,0,179);
-    
+
+    // Put the info from the global state into local variables.
+    // We are not going to change these values so there WON'T be a need to
+    // put these back into the global state later.
     int marginSize = getSharedData().marginSize;
     int ascender = getSharedData().ascender;
     int upperVerticalMarginSize = getSharedData().upperVerticalMarginSize;

@@ -47,9 +47,20 @@ void CellularAutomataOfxApp::setup(){
     stateMachine.getSharedData().pixels = new unsigned char[(int)(theScreenSize.height*theScreenSize.width*3)];  // pixel array
 
 
+    ////////////////////////////////////////////
     // initialise the writings of the menu
+    ////////////////////////////////////////////
     
-    stateMachine.getSharedData().appTitleStringBoundingBox = stateMachine.getSharedData().testFont.getStringBoundingBox(stateMachine.getSharedData().appTitleString, 0,0);
+    // Put the info from the global state into local variables. We'll put the
+    // local variables back into the local state later.
+    int marginSize = stateMachine.getSharedData().marginSize;
+    int ascender = stateMachine.getSharedData().ascender;
+    int upperVerticalMarginSize = stateMachine.getSharedData().upperVerticalMarginSize;
+    int totalVerticalMarginSize = stateMachine.getSharedData().totalVerticalMarginSize;
+    ofRectangle appTitleStringBoundingBox =  stateMachine.getSharedData().appTitleStringBoundingBox;
+    string appTitleString = stateMachine.getSharedData().appTitleString;
+
+    appTitleStringBoundingBox = stateMachine.getSharedData().testFont.getStringBoundingBox(appTitleString, 0,0);
     
     // calculate the horizontal margin size. Note that horizontal margin
     // size is easier than the vertical. Vertical margin size
@@ -57,9 +68,9 @@ void CellularAutomataOfxApp::setup(){
     // perception of vertical centers.
     // Here for the horizontal margin size we simply calculate it
     // as the space that it would take to accommodate an additional "i"
-    string appTitleStringWithSideMargins = "i"+stateMachine.getSharedData().appTitleString;
+    string appTitleStringWithSideMargins = "i"+appTitleString;
     ofRectangle appTitleStringBoundingBoxWithMargins = stateMachine.getSharedData().testFont.getStringBoundingBox(appTitleStringWithSideMargins, 0,0);
-    stateMachine.getSharedData().marginSize = appTitleStringBoundingBoxWithMargins.width - stateMachine.getSharedData().appTitleStringBoundingBox.width;
+    marginSize = appTitleStringBoundingBoxWithMargins.width - appTitleStringBoundingBox.width;
     
     // for the vertical margin size, the descenders and non-caps
     // letters complicate things.
@@ -73,27 +84,34 @@ void CellularAutomataOfxApp::setup(){
     // non-caps letters. So here are all the adjutments, overall.
     // For some weird optical reason, if there are descenders then the
     // extra space above the non-caps letters doesn't bother the eye.
-    stateMachine.getSharedData().ascender = stateMachine.getSharedData().appTitleStringBoundingBox.height;
-    stateMachine.getSharedData().upperVerticalMarginSize = stateMachine.getSharedData().marginSize;
+    ascender = appTitleStringBoundingBox.height;
+    upperVerticalMarginSize = marginSize;
     
-    if (stateMachine.getSharedData().appTitleString.find("g")!=string::npos ||
-        stateMachine.getSharedData().appTitleString.find("j")!=string::npos ||
-        stateMachine.getSharedData().appTitleString.find("q")!=string::npos ||
-        stateMachine.getSharedData().appTitleString.find("p")!=string::npos ||
-        stateMachine.getSharedData().appTitleString.find("y")!=string::npos
+    if (appTitleString.find("g")!=string::npos ||
+        appTitleString.find("j")!=string::npos ||
+        appTitleString.find("q")!=string::npos ||
+        appTitleString.find("p")!=string::npos ||
+        appTitleString.find("y")!=string::npos
         ) {
-        stateMachine.getSharedData().totalVerticalMarginSize = 1.5* stateMachine.getSharedData().marginSize;
-        stateMachine.getSharedData().ascender *= 0.77;
+        totalVerticalMarginSize = 1.5* marginSize;
+        ascender *= 0.77;
     }
     else {
-        stateMachine.getSharedData().totalVerticalMarginSize = 2 * stateMachine.getSharedData().marginSize;
+        totalVerticalMarginSize = 2 * marginSize;
         // in theory for this adjustment below one would
         // want to check if the string is all made of caps
         // in which case the full top margin would be applied.
-        stateMachine.getSharedData().upperVerticalMarginSize *= 0.8;
+        upperVerticalMarginSize *= 0.8;
     }
     
-    
+
+    // Put the info from the local variables back into the global state.
+    stateMachine.getSharedData().marginSize = marginSize;
+    stateMachine.getSharedData().ascender = ascender;
+    stateMachine.getSharedData().upperVerticalMarginSize = upperVerticalMarginSize;
+    stateMachine.getSharedData().totalVerticalMarginSize = totalVerticalMarginSize;
+    stateMachine.getSharedData().appTitleStringBoundingBox = appTitleStringBoundingBox;
+
 }
 
 //--------------------------------------------------------------
