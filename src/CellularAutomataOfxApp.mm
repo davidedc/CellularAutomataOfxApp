@@ -1,6 +1,7 @@
 #include "CellularAutomataOfxApp.h"
 #include "AnimateAutomatonState.h"
 #include "FirstScreenState.h"
+#include "MenuAnimationEnter.h"
 //#include "PlayAutomataAnimationState.cpp"
 //#include "FirstScreenState.h"
 
@@ -35,7 +36,8 @@ void CellularAutomataOfxApp::setup(){
     // initialise state machine
 	stateMachine.addState(new AnimateAutomatonState());
 	stateMachine.addState(new FirstScreenState());
-	stateMachine.changeState("firstScreenState");
+	stateMachine.addState(new MenuAnimationEnter());
+	stateMachine.changeState("MenuAnimationEnter");
     
     stateMachine.getSharedData().isIpad = isIpad;
     stateMachine.getSharedData().isRetina = isRetina;
