@@ -24,6 +24,10 @@
 		C4C14F7D166C24E90049AED6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F7C166C24E90049AED6 /* Default-568h@2x.png */; };
 		C4C14F7F166C24F00049AED6 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F7E166C24F00049AED6 /* Default-Portrait~ipad.png */; };
 		C4C14F81166C24F40049AED6 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C14F80166C24F40049AED6 /* Default-Portrait@2x~ipad.png */; };
+		C4DEDF6A167643EE002E98F0 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DEDF69167643EE002E98F0 /* 57.png */; };
+		C4DEDF6C167643F2002E98F0 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DEDF6B167643F2002E98F0 /* 114.png */; };
+		C4DEDF6E16764409002E98F0 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DEDF6D16764409002E98F0 /* 72.png */; };
+		C4DEDF701676440D002E98F0 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DEDF6F1676440D002E98F0 /* 144.png */; };
 		E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3ED613B38FB500A75A5D /* Project.xcconfig */; };
 		E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
@@ -78,6 +82,10 @@
 		C4C14F7C166C24E90049AED6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C4C14F7E166C24F00049AED6 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		C4C14F80166C24F40049AED6 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		C4DEDF69167643EE002E98F0 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
+		C4DEDF6B167643F2002E98F0 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
+		C4DEDF6D16764409002E98F0 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
+		C4DEDF6F1676440D002E98F0 /* 144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144.png; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E41D400613B39D2100A75A5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +135,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C4DEDF6F1676440D002E98F0 /* 144.png */,
+				C4DEDF6D16764409002E98F0 /* 72.png */,
+				C4DEDF6B167643F2002E98F0 /* 114.png */,
+				C4DEDF69167643EE002E98F0 /* 57.png */,
 				C4C14F80166C24F40049AED6 /* Default-Portrait@2x~ipad.png */,
 				C4C14F7E166C24F00049AED6 /* Default-Portrait~ipad.png */,
 				C4C14F7C166C24E90049AED6 /* Default-568h@2x.png */,
@@ -298,6 +310,10 @@
 				C4C14F7D166C24E90049AED6 /* Default-568h@2x.png in Resources */,
 				C4C14F7F166C24F00049AED6 /* Default-Portrait~ipad.png in Resources */,
 				C4C14F81166C24F40049AED6 /* Default-Portrait@2x~ipad.png in Resources */,
+				C4DEDF6A167643EE002E98F0 /* 57.png in Resources */,
+				C4DEDF6C167643F2002E98F0 /* 114.png in Resources */,
+				C4DEDF6E16764409002E98F0 /* 72.png in Resources */,
+				C4DEDF701676440D002E98F0 /* 144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
